@@ -5,6 +5,10 @@ line-height: 1.5;
 font-family: "Roboto", sans-serif;
 letter-spacing: 0.5px;
 }
+*:focus{
+outline: dotted 3.2px #ff7500 ;
+outline-offset: 3px;
+}
 
 .site-header{
 display: flex;
