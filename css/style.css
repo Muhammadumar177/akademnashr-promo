@@ -14,6 +14,9 @@ outline-offset: 3px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+border-top: 5px solid #ff7500;
+padding-top: 16px;
+padding-bottom: 16px;
 background-color: #fff;
 }
 .logo-link{
@@ -33,6 +36,7 @@ align-items: center;
 .sitenav-list{
 list-style: none;
 display: flex;
+padding: 0;
 }
 .sitenav-link{
 font-size: 13px;
@@ -53,8 +57,12 @@ opacity: 0.6;
 
 /* MAIN */
 .main-link{
+  display: inline-block;
 font-size: 13px;
 line-height: 15px;
+padding: 12px 24px;
+border-radius: 4px;
+font-weight: bold ;
 background-color: #ff7500;
 text-decoration: none;
 color:#fff;
@@ -69,6 +77,8 @@ opacity: 0.6;
 .hero{
   display: flex;
   justify-content: space-between;
+padding-top: 80px;
+padding-bottom: 80px;
   align-items: center;
   background-color: #252420;
   color: #fff;
@@ -79,6 +89,7 @@ opacity: 0.6;
 .orange-line{
 width: 80px;
 height: 3px;
+border: 0;
 background-color: #ff7500;
 }
 .hero-heading{
@@ -89,6 +100,11 @@ font-family: "Roboto Condensed", sans-serif;
 .hero-img{
   width: 510px;
   height: 510px;
+  border-radius: 8px;
+}
+.features{
+padding-top: 210px;
+padding-bottom: 210px;
 }
 .features-heading{
   width: 440px;
@@ -101,8 +117,12 @@ font-family: "Roboto Condensed", sans-serif;
 width: 340px;
 }
 .feature-icon-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 width: 100px;
 height: 100px;
+border-radius: 50%;
 background-color: rgba(255, 117, 0, 0.2);
 }
 .feature-heading{
@@ -114,12 +134,14 @@ font-family: "Roboto Condensed", sans-serif;
   display: flex;
   list-style: none;
   justify-content: space-between;
+  padding: 0;
 }
 
 .promo{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
   background-color: #252420;
   color: #fff;
 }
@@ -139,9 +161,12 @@ color: #ff7500;
 .promo-img{
 width: 440px;
 height: 440px;
+border-radius: 12px;
 object-fit: cover;
 }
 .site-footer{
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: #f8f8f8;
 }
 .site-footer-top{
@@ -151,10 +176,12 @@ justify-content: space-between;
 }
 .site-footer ul {
   list-style: none;
+  padding: 0;
 }
 .site-footer-socials{
 display: flex;
 align-items: center;
+padding: 0;
 
 }
 .site-footer-socials a{
@@ -169,6 +196,7 @@ opacity: 0.6;
 
 .site-footer-diveder{
   height: 2px;
+  border: 0;
 background-color: rgba(37, 36, 32, 0.5);
 }
 .site-footer-bottom{
