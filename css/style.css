@@ -22,6 +22,9 @@ background-color: #fff;
 .logo-link{
 transition: opacity 0.5s ease;
 }
+.logo-link img{
+  display: block;
+}
 .logo-link:hover{
 opacity: 0.8;
 }
