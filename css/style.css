@@ -1,5 +1,9 @@
-
+*{
+  box-sizing: border-box ;
+}
 body{
+  padding: 0;
+  margin: 0;
 font-size: 16px;
 line-height: 1.5;
 font-family: "Roboto", sans-serif;
@@ -9,15 +13,27 @@ letter-spacing: 0.5px;
 outline: dotted 3.2px #ff7500 ;
 outline-offset: 3px;
 }
+/* Container  */
 
+.container{
+  width: 100%;
+  max-width: 1140px;
+padding-left: 20px;
+padding-right: 20px;
+margin-right: auto;
+margin-left: auto;
+}
 .site-header{
-display: flex;
-justify-content: space-between;
-align-items: center;
+
 border-top: 5px solid #ff7500;
 padding-top: 16px;
 padding-bottom: 16px;
 background-color: #fff;
+}
+.site-header-container{
+  display: flex;
+justify-content: space-between;
+align-items: center;
 }
 .logo-link{
 transition: opacity 0.5s ease;
@@ -88,13 +104,16 @@ opacity: 0.8;
 opacity: 0.6;
 }
 .hero{
-  display: flex;
-  justify-content: space-between;
+
 padding-top: 80px;
 padding-bottom: 80px;
+background-color: #252420;
+color: #fff;
+}
+.hero-container{
+  display: flex;
   align-items: center;
-  background-color: #252420;
-  color: #fff;
+  justify-content: space-between
 }
 .hero-content{
   width: 360px;
@@ -149,13 +168,19 @@ margin-right: 40px;
   justify-content: center;
 width: 100px;
 height: 100px;
+margin-bottom: 32px;
 border-radius: 50%;
 background-color: rgba(255, 117, 0, 0.2);
 }
-.feature-heading{
+.feature-tittle{
+  margin-top: 0;
+  margin-bottom: 12px;
 font-size: 24px;
 line-height: 1.2;
 font-family: "Roboto Condensed", sans-serif;
+}
+.feature-info{
+  margin: 0;
 }
 .features-list{
   display: flex;
@@ -166,12 +191,18 @@ font-family: "Roboto Condensed", sans-serif;
 }
 
 .promo{
+  padding-top: 120px;
+  padding-bottom: 16px;
+}
+.promo-inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 64px;
   border-radius: 12px;
   background-color: #252420;
   color: #fff;
+
 }
 .promo-content{
 width: 440px;
@@ -267,6 +298,11 @@ line-height: 19px;
 .site-footer-link:last-child{
   margin-right: 0;
 }
+.site-footer-link li {margin-bottom: 16px;
+}
+.site-footer-link li:last-child {margin-bottom: 0;
+}
+
 .site-footer-link a {
   text-decoration: none;
   color: #252420;
